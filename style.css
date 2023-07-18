@@ -1,0 +1,239 @@
+/* ---------- Universal Section Start ---------- */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #3a3a3a;
+  --secondary-color: #e02c6d;
+  --territory-color: #ffffff;
+}
+/* ---------- Universal Section End ---------- */
+
+/* ---------- Header Section Start ---------- */
+header {
+  padding: 50px 100px;
+}
+
+section,
+.banner {
+  padding: 30px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h4 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.banner-content h1 {
+  color: var(--primary-color);
+  font-size: 52px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.banner-content h6 {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0 18px;
+}
+
+.btn {
+  color: var(--territory-color);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--secondary-color);
+}
+
+.banner-image {
+  background-image: url(./resource/images/Circle\ design.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ---------- Header Section End ---------- */
+
+/* ---------- Main Section Start ---------- */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ---------- Sponsor Section Start ---------- */
+.sponsor-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 1px 0px;
+}
+
+.sponsor-section img {
+  max-width: 500px;
+}
+/* ---------- Sponsor Section End ---------- */
+
+/* ---------- Popular Section Start ---------- */
+.popular-collection > h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.card-1 {
+  box-shadow: 0px 0px 20px -10px;
+  padding: 20px;
+}
+
+.card-1 img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.card h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.card p > span {
+  color: #fb8200;
+}
+
+.card h6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%;
+  color: #787885;
+}
+/* ---------- Popular Section End ---------- */
+
+/* ---------- Feature Product Section Start ---------- */
+.feature-product {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.feature-product img {
+  width: 100%;
+}
+
+.feature-product h1 {
+  font-size: 38px;
+  line-height: 60px;
+  color: #0a0826;
+  font-weight: 700;
+}
+
+.feature-product h6 {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--primary-color);
+  font-weight: 700;
+  padding: 30px 0;
+}
+
+.feature-product .btn {
+  border-radius: 0;
+}
+/* ---------- Feature Product Section End ---------- */
+/* ---------- Main Section End ---------- */
+
+/* ---------- Footer Section Start ---------- */
+footer {
+  color: #ffffff;
+  background-color: #0a0826;
+  text-align: center;
+}
+
+footer h3 {
+  padding: 30px 0 10px;
+}
+
+footer .icon {
+  padding: 10px 0 30px;
+}
+/* ---------- Footer Section End ---------- */
+
+/* ---------- Media Breakpoint Section Start ---------- */
+@media only screen and (max-width: 992px) {
+  /* nothing to change */
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .banner,
+  .feature-product {
+    flex-direction: column-reverse;
+  }
+
+  .banner,
+  .feature-product,
+  nav h4 {
+    text-align: center;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ---------- Media Breakpoint Section End ---------- */
